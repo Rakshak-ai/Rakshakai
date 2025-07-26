@@ -1,63 +1,42 @@
-<!-- RakshakAI - donate.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donate to RakshakAI</title>
+  <title>Donate – RakshakAI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h1>Donate to RakshakAI</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="donate.html">Donate</a>
-      <a href="features.html">Features</a>
-      <a href="supporters.html">Supporters</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+    <h1>Support RakshakAI</h1>
+    <p>Together, let’s protect every victim. Your donation powers real change.</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Your Support Matters</h2>
-      <p>Help us protect lives and deliver justice through technology.</p>
+  <main style="text-align: center; padding: 20px;">
+    <h2 style="margin-top: 40px;">Scan to Donate</h2>
+    
+    <!-- QR Code Image -->
+    <img src="assets/qr-phonepe.jpg" alt="Scan to donate QR Code" style="max-width: 250px; margin: 20px auto; display: block; border: 1px solid #ccc; padding: 10px; border-radius: 10px;" />
 
-      <!-- Razorpay Button -->
-      <button onclick="makePayment()">Donate Now</button>
-    </section>
+    <!-- Scan Note -->
+    <p style="font-size: 1rem; margin-top: 10px;">Scan to donate via PhonePe</p>
+
+    <!-- Donate Button -->
+    <a href="upi://pay?pa=9265371759@ybl" style="display: inline-block; padding: 12px 25px; margin-top: 20px; background-color: #1a73e8; color: white; text-decoration: none; font-weight: bold; border-radius: 6px;">Donate Now</a>
+
+    <!-- WhatsApp Contact Button -->
+    <div style="margin-top: 30px;">
+      <a href="https://wa.me/918279521992" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold;">
+        📞 Contact Us on WhatsApp
+      </a>
+    </div>
   </main>
 
-  <footer>
-    <p>Founder: Manvender Singh | Contact: <a href="https://wa.me/918279521992" target="_blank">WhatsApp</a> | Email: <a href="mailto:rakshakaisos@gmail.com">rakshakaisos@gmail.com</a></p>
-    <p>&copy; 2025 RakshakAI. All rights reserved.</p>
+  <footer style="text-align: center; margin-top: 60px; font-size: 0.9rem; color: #888;">
+    <!-- Footer kept minimal and consistent -->
+    © 2025 RakshakAI
   </footer>
 
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  <script>
-    function makePayment() {
-      var options = {
-        "key": "rzp_test_1234567890", // 🔴 Replace with your real Razorpay Key
-        "amount": "50000", // in paise = ₹500
-        "currency": "INR",
-        "name": "RakshakAI",
-        "description": "Support RakshakAI",
-        "handler": function (response){
-            alert("Thank you! Payment ID: " + response.razorpay_payment_id);
-        },
-        "prefill": {
-          "name": "",
-          "email": "",
-          "contact": ""
-        },
-        "theme": {
-          "color": "#3399cc"
-        }
-      };
-      var rzp1 = new Razorpay(options);
-      rzp1.open();
-    }
-  </script>
 </body>
 </html>
