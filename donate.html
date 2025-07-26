@@ -1,35 +1,63 @@
-<!-- donate.html -->
+<!-- RakshakAI - donate.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donate - RakshakAI</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Donate to RakshakAI</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Support RakshakAI</h1>
+    <h1>Donate to RakshakAI</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="donate.html">Donate</a>
       <a href="features.html">Features</a>
       <a href="supporters.html">Supporters</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <h2>Contribute to Justice</h2>
-    <p>Your small help can protect someone's life.</p>
-    <button onclick="window.location.href='upi://pay?pa=rakshakaisos@upi&pn=RakshakAI&cu=INR'">Donate Now via UPI</button>
-    <p>Or scan QR code below:</p>
-    <img src="qr-code.png" alt="Donate QR Code" width="200">
+    <section>
+      <h2>Your Support Matters</h2>
+      <p>Help us protect lives and deliver justice through technology.</p>
+
+      <!-- Razorpay Button -->
+      <button onclick="makePayment()">Donate Now</button>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 RakshakAI | Built with ❤️ by Maan</p>
-    <a href="https://wa.me/918279521992" target="_blank">📞 WhatsApp Us</a>
+    <p>Founder: Manvender Singh | Contact: <a href="https://wa.me/918279521992" target="_blank">WhatsApp</a> | Email: <a href="mailto:rakshakaisos@gmail.com">rakshakaisos@gmail.com</a></p>
+    <p>&copy; 2025 RakshakAI. All rights reserved.</p>
   </footer>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    function makePayment() {
+      var options = {
+        "key": "rzp_test_1234567890", // 🔴 Replace with your real Razorpay Key
+        "amount": "50000", // in paise = ₹500
+        "currency": "INR",
+        "name": "RakshakAI",
+        "description": "Support RakshakAI",
+        "handler": function (response){
+            alert("Thank you! Payment ID: " + response.razorpay_payment_id);
+        },
+        "prefill": {
+          "name": "",
+          "email": "",
+          "contact": ""
+        },
+        "theme": {
+          "color": "#3399cc"
+        }
+      };
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+    }
+  </script>
 </body>
 </html>
