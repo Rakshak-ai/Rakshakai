@@ -1,0 +1,5 @@
+
+body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+header, footer { background-color: #333; color: white; padding: 10px 20px; }
+nav a { margin: 0 10px; text-decoration: none; color: #007BFF; }
+main { background-color: white; padding: 20px; margin-top: 10px; }
