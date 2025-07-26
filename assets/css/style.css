@@ -1,5 +1,57 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
 
-body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
-header, footer { background-color: #333; color: white; padding: 10px 20px; }
-nav a { margin: 0 10px; text-decoration: none; color: #007BFF; }
-main { background-color: white; padding: 20px; margin-top: 10px; }
+.hero {
+  background: #000066;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.banner-img {
+  max-width: 80%;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.donate-btn {
+  display: inline-block;
+  background: green;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.qr-img {
+  width: 220px;
+  margin: 10px 0;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  z-index: 100;
+}
+.whatsapp-float img {
+  width: 100%;
+  height: auto;
+}
