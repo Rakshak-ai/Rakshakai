@@ -1,17 +1,35 @@
-<section style="background-color: #fef9ef; padding: 40px 20px; text-align: center; border-radius: 15px; max-width: 800px; margin: 40px auto; box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); font-family: 'Baloo 2', cursive;">
-  <h2 style="font-size: 2.2rem; color: #d63031; margin-bottom: 10px;">रक्षक बने – डोनेट करें</h2>
-  <p style="font-size: 1.2rem; color: #2d3436; margin-bottom: 20px;">
-    आपका छोटा योगदान भी किसी पीड़ित की जान बचा सकता है। हम मिलकर एक ऐसा सिस्टम बना रहे हैं जो अत्याचार का शिकार हुए लोगों की मदद करता है – तुरंत और प्रभावी तरीक़े से।
-  </p>
-  <p style="font-size: 1rem; color: #2d3436; font-weight: bold; margin-bottom: 15px;">
-    ₹37,500 raised out of ₹1,00,000 goal 💖
-  </p>
+<!-- donate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate - RakshakAI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Support RakshakAI</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate</a>
+      <a href="features.html">Features</a>
+      <a href="supporters.html">Supporters</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <button style="padding: 12px 28px; font-size: 1rem; background-color: #e17055; color: white; border: none; border-radius: 8px; cursor: pointer;">
-    डोनेट करें
-  </button>
+  <main>
+    <h2>Contribute to Justice</h2>
+    <p>Your small help can protect someone's life.</p>
+    <button onclick="window.location.href='upi://pay?pa=rakshakaisos@upi&pn=RakshakAI&cu=INR'">Donate Now via UPI</button>
+    <p>Or scan QR code below:</p>
+    <img src="qr-code.png" alt="Donate QR Code" width="200">
+  </main>
 
-  <p style="font-size: 0.9rem; color: #636e72; margin-top: 15px;">
-    UPI/QR कोड द्वारा सीधा ट्रांसफर का विकल्प भी जल्द उपलब्ध होगा।
-  </p>
-</section>
+  <footer>
+    <p>&copy; 2025 RakshakAI | Built with ❤️ by Maan</p>
+    <a href="https://wa.me/918279521992" target="_blank">📞 WhatsApp Us</a>
+  </footer>
+</body>
+</html>
