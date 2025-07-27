@@ -1,10 +1,8 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact – RakshakAI</title>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -31,10 +29,37 @@
     .container {
       padding: 2rem;
     }
+
+    /* ✅ WhatsApp Button Styling */
     .whatsapp {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 15px;
+      right: 15px;
+      z-index: 999;
+      background-color: #25d366;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    .whatsapp img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp {
+        padding: 8px;
+      }
+      .whatsapp img {
+        width: 36px;
+        height: 36px;
+      }
     }
   </style>
 </head>
@@ -49,14 +74,17 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <div class="container">
     <h1>Contact Us</h1>
     <p><strong>Email:</strong> rakshakaisos@gmail.com</p>
     <p><strong>Phone:</strong> +91 82795 21992</p>
     <p><strong>WhatsApp:</strong> Same as phone above.</p>
   </div>
-  <a class="whatsapp" href="https://wa.me/918279521992" target="_blank">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+
+  <!-- ✅ WhatsApp Button -->
+  <a class="whatsapp" href="https://wa.me/918279521992" target="_blank" aria-label="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Button" />
   </a>
 </body>
 </html>
