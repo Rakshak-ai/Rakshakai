@@ -1,109 +1,67 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RakshakAI – Features</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>RakshakAI - Features</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
-</head><body>
-  <!-- Navbar -->
-  <header class="bg-[#0f0f0f] shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="text-xl font-bold text-white">RakshakAI</div>
-      <nav class="space-x-4 text-white">
-        <a href="#features" class="hover:text-blue-400">Features</a>
-        <a href="#vision" class="hover:text-blue-400">Vision</a>
-        <a href="#faq" class="hover:text-blue-400">FAQs</a>
-        <a href="#contact" class="hover:text-blue-400">Contact</a>
-      </nav>
-    </div>
-  </header>  <!-- Vision Section -->  <section id="vision" class="py-20 px-4 text-center" data-aos="fade-up">
-    <h2 class="text-4xl font-bold mb-4 text-blue-400">Our Vision</h2>
-    <p class="max-w-3xl mx-auto text-lg text-gray-300">
-      RakshakAI ka lakshya hai har us vyakti tak suraksha pahunchana jo kisi bhi roop me mental, emotional, ya physical abuse se guzar raha ho. Hum AI ke madhyam se legal support, emotional counseling, aur real-time help ek hi platform par dete hain. Har shikayat, har aawaz, har aansu important hai.
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- ✅ Header -->
+  <header class="bg-black text-white p-4 flex justify-between items-center flex-wrap shadow-md sticky top-0 z-50">
+    <h2 class="text-2xl font-bold">RakshakAI</h2>
+    <nav class="flex gap-4 text-sm mt-2 md:mt-0">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="features.html" class="underline text-yellow-400">Features</a>
+      <a href="#vision" class="hover:underline">Vision</a>
+      <a href="faq.html" class="hover:underline">FAQs</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Features Section -->
+  <section class="p-6 md:p-12 fade-in-up">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-yellow-400">🔐 Key Features of RakshakAI</h1>
+    <ul class="space-y-6 text-lg leading-relaxed">
+      <li>✅ AI-Based Abuse Detection (via Chat + Voice)</li>
+      <li>✅ Real-Time SOS Alert System with Location Sharing</li>
+      <li>✅ Anonymous Reporting with Evidence Upload</li>
+      <li>✅ Free Legal Guidance (AI + Verified Lawyers)</li>
+      <li>✅ Emergency Emotional Support Chat</li>
+      <li>✅ NGO & Police Helpline Auto-Connect</li>
+      <li>✅ Offline Mode (for no internet situations)</li>
+      <li>✅ Data Encryption + Full Anonymity</li>
+    </ul>
+  </section>
+
+  <!-- ✅ Vision Section -->
+  <section id="vision" class="p-6 md:p-12 bg-gray-900 fade-in-up">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">🚀 Our Vision</h2>
+    <p class="text-lg leading-relaxed">
+      We dream of a safer India, where every victim — regardless of gender — gets fast, intelligent, and real-time protection.
+      RakshakAI is not just an app. It's a **movement** to empower the unheard voices and shield the vulnerable with technology.
     </p>
-  </section>  <!-- Features Section -->  <section id="features" class="py-20 px-4" data-aos="fade-up">
-    <div class="text-center mb-10">
-      <h2 class="text-4xl font-bold text-blue-400">Key Features</h2>
-      <p class="text-gray-400 mt-2">Abuse ke khilaaf AI-powered protection</p>
-    </div>
-    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg hover:shadow-blue-500 transition" data-aos="zoom-in">
-        <h3 class="text-xl font-semibold text-blue-300 mb-2">Real-Time SOS</h3>
-        <p class="text-gray-300">Ek tap par turant alert & location send to nearby volunteers & police.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg hover:shadow-blue-500 transition" data-aos="zoom-in" data-aos-delay="100">
-        <h3 class="text-xl font-semibold text-blue-300 mb-2">AI Legal Chatbot</h3>
-        <p class="text-gray-300">Hindi & English me kanooni salah 24/7 bina kisi human delay ke.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg hover:shadow-blue-500 transition" data-aos="zoom-in" data-aos-delay="200">
-        <h3 class="text-xl font-semibold text-blue-300 mb-2">Emotional Support</h3>
-        <p class="text-gray-300">Anonymous chat with empathetic AI trained in trauma response.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg hover:shadow-blue-500 transition" data-aos="zoom-in">
-        <h3 class="text-xl font-semibold text-blue-300 mb-2">Evidence Vault</h3>
-        <p class="text-gray-300">Audio, video, aur messages securely store karein future legal action ke liye.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg hover:shadow-blue-500 transition" data-aos="zoom-in" data-aos-delay="100">
-        <h3 class="text-xl font-semibold text-blue-300 mb-2">Volunteer Network</h3>
-        <p class="text-gray-300">Trusted NGOs aur helpers ka verified network aapke aas paas.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg hover:shadow-blue-500 transition" data-aos="zoom-in" data-aos-delay="200">
-        <h3 class="text-xl font-semibold text-blue-300 mb-2">Offline Access</h3>
-        <p class="text-gray-300">Bina internet ke bhi SOS aur voice logging feature kaam karta hai.</p>
-      </div>
-    </div>
-  </section>  <!-- FAQs Section -->  <section id="faq" class="py-20 px-4" data-aos="fade-up">
-    <div class="text-center mb-10">
-      <h2 class="text-4xl font-bold text-blue-400">Frequently Asked Questions</h2>
-    </div>
-    <div class="max-w-4xl mx-auto space-y-6">
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">1. RakshakAI kya hai?</h3>
-        <p class="text-gray-300">Ye ek AI-powered safety app hai jo legal, emotional aur emergency help provide karta hai.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">2. Kya yeh app offline bhi kaam karta hai?</h3>
-        <p class="text-gray-300">Haan, offline mode me voice evidence record aur SOS send function active rehta hai.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">3. Data safe rahega?</h3>
-        <p class="text-gray-300">Bilkul. Sabhi data encrypted & secure vault me store hote hain.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">4. Kaun kaun RakshakAI ka use kar sakta hai?</h3>
-        <p class="text-gray-300">Koi bhi individual jo danger me hai – chahe gender, age ya background kuch bhi ho.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">5. App download kahan se kar sakte hain?</h3>
-        <p class="text-gray-300">Official APK soon available hoga website par – rakshak.ai</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">6. Kya yeh paid service hai?</h3>
-        <p class="text-gray-300">Majority features free rahenge. Kuch premium safety options optional honge.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">7. Founder kaun hai?</h3>
-        <p class="text-gray-300">RakshakAI ke founder hai Manvender Singh – ek mission-driven samajik sevak.</p>
-      </div>
-      <div class="bg-[#1a1a1a] p-4 rounded-xl">
-        <h3 class="text-xl text-white font-semibold">8. NGO ya supporters kaise judein?</h3>
-        <p class="text-gray-300">Contact section se form fill karke aap network ka hissa ban sakte hain.</p>
-      </div>
-    </div>
-  </section>  <!-- Footer -->  <footer class="bg-[#0f0f0f] text-center py-6 border-t border-gray-700 mt-10">
-    <p class="text-gray-400">© 2025 RakshakAI | All Rights Reserved</p>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-black text-gray-400 p-4 mt-12 text-sm text-center border-t border-gray-700">
+    © 2025 RakshakAI. Built with ❤️ for Justice. Contact: rakshakaisos@gmail.com | WhatsApp: 8279521992
   </footer>
+
 </body>
 </html>
