@@ -1,150 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donate – RakshakAI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate - RakshakAI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f6f6f6;
-      color: #222;
+      background: linear-gradient(to right, #f9f9f9, #e8f0ff);
+      color: #333;
     }
-
     header {
-      background-color: #0f172a;
-      color: white;
-      padding: 20px 40px;
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
+    .nav-links a {
       margin-left: 20px;
-      font-weight: 600;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: 500;
     }
-
     .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 2rem;
+      text-align: center;
     }
-
-    .section-title {
-      font-size: 24px;
+    .qr-section, .form-section {
+      background: #fff;
+      padding: 2rem;
+      margin: 1rem auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+    .qr-section img {
+      max-width: 250px;
       margin-bottom: 10px;
-      color: #0f172a;
     }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
     input[type="text"] {
-      width: 100%;
-      padding: 12px;
-      font-size: 1em;
+      padding: 10px;
+      width: 80%;
+      border-radius: 10px;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      margin-bottom: 1rem;
     }
-
     button {
-      background-color: #0f172a;
+      background-color: #2563eb;
       color: white;
-      padding: 12px 20px;
-      font-size: 1em;
       border: none;
-      border-radius: 6px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
       cursor: pointer;
     }
-
-    button:hover {
-      background-color: #1e293b;
-    }
-
     .donor-list {
-      margin-top: 20px;
-      padding-left: 0;
-      list-style-type: none;
-    }
-
-    .donor-list li {
-      padding: 8px;
-      background: #f1f5f9;
-      border-radius: 6px;
-      margin-bottom: 6px;
+      margin-top: 1rem;
+      background: #f3f4f6;
+      border-radius: 10px;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>RakshakAI</h1>
-    <nav>
+    <div style="font-weight: bold; font-size: 1.2rem; color: #1e3a8a;">RakshakAI</div>
+    <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="features.html">Features</a>
       <a href="donate.html">Donate</a>
+      <a href="features.html">Features</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html">Contact</a>
     </nav>
-  </header>
-
-  <div class="container">
-    <h2 class="section-title">Support the Mission 🙌</h2>
-    <p>Every donation helps us protect more victims of abuse, injustice, and violence. Your name will be proudly displayed here!</p>
-
-    <form id="donorForm">
-      <div class="form-group">
-        <input type="text" id="donorName" placeholder="Enter your name..." required>
-      </div>
-      <button type="submit">I Donated 💖</button>
-    </form>
-
-    <h3 class="section-title">Our Proud Donors</h3>
-    <ul class="donor-list" id="donorList"></ul>
+  </header>  <div class="container">
+    <div class="qr-section">
+      <h2>Support RakshakAI</h2>
+      <img src="qr.png" alt="UPI QR Code">
+      <p><strong>UPI ID:</strong> 9265371759@ybl</p>
+      <p>Scan & Donate via any UPI App</p>
+    </div><div class="form-section">
+  <h3>Become a Public Contributor</h3>
+  <input type="text" id="donorName" placeholder="Enter your name">
+  <br>
+  <button onclick="addDonor()">Contribute Now</button>
+  <div class="donor-list" id="donorList">
+    <h4>Live Contributors</h4>
+    <ul id="donorNames"></ul>
   </div>
+</div>
 
-  <script>
-    const form = document.getElementById("donorForm");
-    const donorNameInput = document.getElementById("donorName");
-    const donorList = document.getElementById("donorList");
-
-    let donors = JSON.parse(localStorage.getItem("donors")) || [];
-
-    function renderDonors() {
-      donorList.innerHTML = "";
-      donors.forEach(name => {
+  </div>  <script>
+    function addDonor() {
+      const nameInput = document.getElementById("donorName");
+      const name = nameInput.value.trim();
+      if (name !== "") {
+        const list = document.getElementById("donorNames");
         const li = document.createElement("li");
         li.textContent = name;
-        donorList.appendChild(li);
-      });
-    }
-
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      const name = donorNameInput.value.trim();
-      if (name) {
-        donors.unshift(name); // latest on top
-        localStorage.setItem("donors", JSON.stringify(donors));
-        donorNameInput.value = "";
-        renderDonors();
+        list.appendChild(li);
+        nameInput.value = "";
       }
-    });
-
-    // Load existing donor list on page load
-    renderDonors();
-  </script>
-
-</body>
+    }
+  </script></body>
 </html>
