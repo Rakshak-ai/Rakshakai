@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
   <title>Donate - RakshakAI</title>  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   
   <style>  
     body {  
@@ -42,7 +43,7 @@
       text-align: center;  
     }  
 
-    .qr-section, .form-section {  
+    .qr-section, .form-section, .thanks-section {  
       background: #fff;  
       padding: 2rem;  
       margin: 1rem auto;  
@@ -81,7 +82,6 @@
       padding: 10px;  
     }  
 
-    /* WhatsApp Floating Button Styles */  
     .whatsapp-float {  
       position: fixed;  
       bottom: 20px;  
@@ -102,7 +102,20 @@
       width: 100%;  
       height: 100%;  
       border-radius: 50%;  
-    }  
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
   </style>  
 </head>  
 
@@ -122,14 +135,14 @@
   <!-- Navbar End -->  
 
   <div class="container">  
-    <div class="qr-section">  
+    <div class="qr-section" data-aos="fade-up">  
       <h2>Support RakshakAI</h2>  
       <img src="qr.png" alt="UPI QR Code">  
       <p><strong>UPI ID:</strong> 9265371759@ybl</p>  
       <p>Scan & Donate via any UPI App</p>  
     </div>  
 
-    <div class="form-section">  
+    <div class="form-section" data-aos="fade-up" data-aos-delay="100">  
       <h3>Become a Public Contributor</h3>  
       <input type="text" id="donorName" placeholder="Enter your name">  
       <br>  
@@ -140,7 +153,27 @@
         <ul id="donorNames"></ul>  
       </div>  
     </div>  
+
+    <div class="thanks-section" data-aos="zoom-in" data-aos-delay="200">
+      <h3>❤️ Thank You for Supporting Us!</h3>
+      <p>Your donation helps protect lives and spread hope. Together, we’re building a safer world for everyone. 🙏</p>
+    </div>
   </div>  
+
+  <!-- WhatsApp Floating Button -->  
+  <a href="https://wa.me/918279521992" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">  
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Chat">  
+  </a>  
+
+  <!-- Footer -->
+  <footer>
+    © 2025 RakshakAI. All Rights Reserved. | Built with 💙 by Manvender Singh & Team<br>
+    <a href="https://wa.me/918279521992" target="_blank">WhatsApp Chat</a>
+  </footer>
+
+  <!-- Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script>AOS.init({ duration: 1000 });</script>
 
   <script>  
     function addDonor() {  
@@ -156,9 +189,5 @@
     }  
   </script>  
 
-  <!-- WhatsApp Floating Button -->  
-  <a href="https://wa.me/918279521992" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">  
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Chat">  
-  </a>  
 </body>  
 </html>
