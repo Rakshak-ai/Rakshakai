@@ -1,109 +1,149 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RakshakAI - Because Every Victim Deserves a Protector</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RakshakAI – Because Every Victim Deserves a Protector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
     body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f4f8;
-      color: #000;
-      overflow-x: hidden;
-    }header {
-  background-color: #0d47a1;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-header p {
-  font-size: 1.2em;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.highlight {
-  color: #0d47a1;
-  font-weight: bold;
-}
-
-.donors {
-  background-color: #e3f2fd;
-  padding: 30px 20px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
-
-.donors h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #0d47a1;
-}
-
-.donor-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
-  text-align: center;
-}
-
-footer {
-  background-color: #0d47a1;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.hindi-section {
-  background-color: #fff3e0;
-  padding: 30px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-
-.hindi-section p {
-  font-size: 1.1em;
-  color: #4e342e;
-}
-
+      font-family: 'Jost', sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(to right, #111, #1d1d1d);
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: gold;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+    .image-banner {
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255,215,0,0.3);
+    }
+    h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .highlight {
+      color: gold;
+      font-weight: bold;
+    }
+    .donors, .founder {
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+    .donors ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    .donors li {
+      margin: 10px 0;
+    }
+    .footer {
+      background-color: #000;
+      padding: 40px 20px;
+      text-align: center;
+      color: #999;
+      font-size: 0.95rem;
+    }
+    .footer a {
+      color: gold;
+      text-decoration: none;
+    }
+    @media(max-width: 600px){
+      .hero h1 { font-size: 2rem; }
+      .hero p, p, li { font-size: 1rem; }
+    }
   </style>
-</head><body>
-  <header>
-    <h1>RakshakAI</h1>
-    <p>Because Every Victim Deserves a Protector</p>
-  </header>  <section>
-    <h2 class="highlight">Together, We’re Building Safety</h2>
-    <p>
-      RakshakAI is more than just technology — it's a mission to stand with victims of abuse and injustice, and empower them with real-time protection and legal help. Join us in this fight for dignity and justice.
-    </p><div class="hindi-section">
-  <p><strong>रक्षकAI</strong> एक ऐसा प्रयास है जो हर पीड़ित को न्याय दिलाने और उनकी सुरक्षा सुनिश्चित करने के लिए समर्पित है। हम तकनीक के माध्यम से शोषण के खिलाफ आवाज़ उठा रहे हैं।</p>
-</div>
+</head>
+<body>
 
-  </section>  <section class="donors">
-    <h2>Our Honorable Contributors</h2>
-    <div class="donor-list">
-      <div>Dr. Meera Sharma</div>
-      <div>Adv. Rajeev Verma</div>
-      <div>Bhavya Singh</div>
-      <div>Ritika Bose</div>
-      <div>Amit Anand</div>
-      <div>Ravi Chauhan</div>
-      <div>Kiran More</div>
-      <div>Neha Goyal</div>
-    </div>
-  </section>  <footer>
-    <p><strong>Contact:</strong> rakshakaisos@gmail.com | 📞 8279521992</p>
-    <p><strong>Founder:</strong> Manvender Singh (Maan)</p>
-    <p>© 2025 RakshakAI. All rights reserved.</p>
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="fade-up">
+    <h1>RakshakAI</h1>
+    <p>Because Every Victim Deserves a <span class="highlight">Protector</span></p>
+    <p style="margin-top:15px;">हर पीड़ित को चाहिए एक रक्षक – यही है हमारा लक्ष्य।</p>
+  </section>
+
+  <!-- IMAGE BANNER -->
+  <section data-aos="zoom-in">
+    <img src="https://raw.githubusercontent.com/Rakshak-ai/RakshakAI/main/assets/rakshak-banner.jpg" alt="RakshakAI Banner" class="image-banner">
+  </section>
+
+  <!-- MISSION SECTION -->
+  <section data-aos="fade-right">
+    <h2>Our Mission</h2>
+    <p>We are building <span class="highlight">India’s first AI-powered</span> protection system for victims of abuse, violence, and injustice.<br><br>
+    हमारा सपना है कि तकनीक की मदद से हर शोषित व्यक्ति को तुरंत सहायता, सुरक्षा और न्याय मिले – बिना किसी डर के।</p>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section data-aos="fade-left">
+    <h2>Key Features</h2>
+    <p>
+      🔹 Real-time Emergency Alerts<br>
+      🔹 Legal + Emotional AI Chat Support<br>
+      🔹 Victim Data Privacy First<br>
+      🔹 Trusted by NGOs, Lawyers, and Survivors<br><br>
+      🔸 अब चुप रहना नहीं पड़ेगा – अब है RakshakAI आपके साथ।
+    </p>
+  </section>
+
+  <!-- DONORS SECTION -->
+  <section class="donors" data-aos="fade-up">
+    <h2>💛 Thank You, Supporters</h2>
+    <ul>
+      <li>Dr. Rohit Mishra</li>
+      <li>Adv. Neha Sharma</li>
+      <li>Rahul Verma</li>
+      <li>Savita Devi</li>
+      <li>Manoj Tiwari</li>
+    </ul>
+  </section>
+
+  <!-- FOUNDER SECTION -->
+  <section class="founder" data-aos="fade-up">
+    <h2>👤 Founder</h2>
+    <p><span class="highlight">Manvender Singh</span><br>Social Innovator, Visionary Behind RakshakAI</p>
+    <p style="margin-top:10px;">Contact: <a href="mailto:rakshakaisos@gmail.com">rakshakaisos@gmail.com</a><br>📞 WhatsApp: 8279521992</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 RakshakAI. All Rights Reserved. | UPI: 9265371759@ybl
   </footer>
-</body></html>
+
+  <!-- ANIMATION LIBRARIES -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+</body>
+</html>
