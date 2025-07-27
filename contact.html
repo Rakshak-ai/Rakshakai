@@ -4,87 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact – RakshakAI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Jost', sans-serif;
-      background: #f9f9f9;
-      color: #111;
+      background-color: #0a0a23;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
     }
-    header {
-      background-color: #0f172a;
-      color: white;
+
+    header, footer {
+      background-color: #111132;
       padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      text-align: center;
     }
+
     nav a {
-      color: white;
-      margin: 0 10px;
+      color: #fff;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
+
     .container {
+      max-width: 900px;
+      margin: auto;
       padding: 2rem;
     }
 
-    /* ✅ WhatsApp Button Styling */
-    .whatsapp {
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-      z-index: 999;
-      background-color: #25d366;
+    h1, h2 {
+      color: #00bcd4;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      line-height: 1.8;
+    }
+
+    .founder-image {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      padding: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      transition: transform 0.2s;
+      object-fit: cover;
+      margin: 1.5rem auto;
+      display: block;
+      border: 2px solid #00bcd4;
     }
 
-    .whatsapp img {
-      width: 40px;
-      height: 40px;
+    .footer-text {
+      color: #aaa;
+      font-size: 14px;
     }
 
-    .whatsapp:hover {
-      transform: scale(1.05);
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      font-size: 24px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 999;
     }
 
-    @media (max-width: 600px) {
-      .whatsapp {
-        padding: 8px;
-      }
-      .whatsapp img {
-        width: 36px;
-        height: 36px;
-      }
+    .whatsapp-button:hover {
+      background-color: #1ebd5b;
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>RakshakAI</h2>
+    <h1>Contact Us – RakshakAI</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="donate.html">Donate</a>
       <a href="features.html">Features</a>
-      <a href="faq.html">FAQs</a>
-      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
     </nav>
   </header>
 
-  <div class="container">
-    <h1>Contact Us</h1>
-    <p><strong>Email:</strong> rakshakaisos@gmail.com</p>
-    <p><strong>Phone:</strong> +91 82795 21992</p>
-    <p><strong>WhatsApp:</strong> Same as phone above.</p>
-  </div>
+  <main class="container">
+    <section>
+      <h2>Get in Touch</h2>
+      <p class="contact-info">
+        📧 <strong>Email:</strong> <a href="mailto:rakshakaisos@gmail.com" style="color:#80deea;">rakshakaisos@gmail.com</a><br/>
+        📞 <strong>Phone/WhatsApp:</strong> <a href="https://wa.me/918279521992" style="color:#80deea;">+91 82795 21992</a><br/>
+        🧑 <strong>Founder:</strong> Manvender Singh
+      </p>
+    </section>
 
-  <!-- ✅ WhatsApp Button -->
-  <a class="whatsapp" href="https://wa.me/918279521992" target="_blank" aria-label="Chat with us on WhatsApp">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Button" />
-  </a>
+    <section>
+      <img src="images/founder.jpg" alt="Founder Image" class="founder-image"/>
+    </section>
+
+    <section>
+      <h2>Our Story</h2>
+      <p>
+        RakshakAI was born from a deep need to protect those who often remain unheard. Our founder, Manvender Singh, saw firsthand how victims of abuse suffer in silence due to a lack of real-time support and trustable platforms.
+        <br/><br/>
+        With RakshakAI, we aim to bring legal guidance, emotional healing, and emergency help — all in one place. 
+        Every life matters, and our mission is simple: <strong>No victim should ever feel alone.</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-text">© 2025 RakshakAI. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/918279521992" class="whatsapp-button" title="Chat on WhatsApp">💬</a>
 </body>
 </html>
