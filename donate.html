@@ -1,53 +1,150 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donate - RakshakAI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head><body class="bg-gray-950 text-white font-[Inter]">
-  <!-- Header -->
-  <header class="text-center py-6 bg-gray-900 shadow-md">
-    <h1 class="text-3xl font-bold text-yellow-400">Support RakshakAI</h1>
-    <p class="text-sm text-gray-300 mt-2">क्योंकि हर शोषित को रक्षक चाहिए</p>
-  </header>  <!-- Donate Now Section -->  <section class="py-10 px-4 text-center">
-    <h2 class="text-2xl font-bold text-yellow-300 mb-4">Your Contribution Saves Lives</h2>
-    <p class="max-w-2xl mx-auto text-gray-300 mb-6">
-      RakshakAI एक AI-powered सुरक्षा और न्याय प्लेटफॉर्म है जो अत्याचार झेल रहे व्यक्तियों को रियल-टाइम मदद और सपोर्ट देता है।
-      आपकी छोटी सी सहायता किसी की ज़िंदगी बदल सकती है।
-    </p>
-    <img src="/images/qr-code.png" alt="Donate QR Code" class="mx-auto w-64 h-64 rounded-lg shadow-lg border-2 border-yellow-500" />
-    <p class="mt-4 text-lg text-yellow-200">UPI ID: <strong>9265371759@ybl</strong></p>
-  </section>  <!-- Why Donate -->  <section class="py-10 px-4 bg-gray-900">
-    <div class="max-w-3xl mx-auto text-center">
-      <h3 class="text-xl font-bold text-yellow-400 mb-4">Why Donate to RakshakAI?</h3>
-      <ul class="text-left space-y-3 text-gray-300">
-        <li>✅ 24x7 सुरक्षा और AI आधारित अलर्ट सिस्टम</li>
-        <li>✅ कानूनी और मानसिक सहायता एक ही प्लेटफॉर्म पर</li>
-        <li>✅ NGO और पुलिस से तुरंत संपर्क सुविधा</li>
-        <li>✅ Data पूरी तरह से सुरक्षित और गुप्त रखा जाता है</li>
-        <li>✅ महिलाओं, पुरुषों और बच्चों – सभी के लिए</li>
-      </ul>
-    </div>
-  </section>  <!-- Fund Progress -->  <section class="py-10 px-4 text-center">
-    <h3 class="text-xl font-semibold text-yellow-300 mb-4">Funding Goal: ₹1,00,000</h3>
-    <div class="w-full max-w-xl mx-auto bg-gray-800 rounded-full h-6 overflow-hidden">
-      <div class="bg-yellow-500 h-6" style="width: 38%;"></div>
-    </div>
-    <p class="text-sm text-gray-400 mt-2">₹38,000 raised so far</p>
-  </section>  <!-- Top Donors -->  <section class="py-10 px-4 bg-gray-900">
-    <div class="max-w-3xl mx-auto text-center">
-      <h3 class="text-xl font-bold text-yellow-400 mb-4">Recent Contributors</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-200">
-        <div>🔸 Dr. S. Meena</div>
-        <div>🔸 Adv. Harish Jain</div>
-        <div>🔸 Ayesha K.</div>
-        <div>🔸 Pradeep Sharma</div>
-        <div>🔸 Shivani & Family</div>
-        <div>🔸 Anonymous Angel</div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate – RakshakAI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f6f6f6;
+      color: #222;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #0f172a;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1e293b;
+    }
+
+    .donor-list {
+      margin-top: 20px;
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .donor-list li {
+      padding: 8px;
+      background: #f1f5f9;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RakshakAI</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Support the Mission 🙌</h2>
+    <p>Every donation helps us protect more victims of abuse, injustice, and violence. Your name will be proudly displayed here!</p>
+
+    <form id="donorForm">
+      <div class="form-group">
+        <input type="text" id="donorName" placeholder="Enter your name..." required>
       </div>
-    </div>
-  </section>  <!-- Footer -->  <footer class="bg-gray-950 text-gray-400 text-center py-6 text-sm">
-    <p>Founder: Manvender Singh | 📞 8279521992 | 📧 rakshakaisos@gmail.com</p>
-    <p class="mt-2">© 2025 RakshakAI. All rights reserved.</p>
-  </footer>
-</body></html>
+      <button type="submit">I Donated 💖</button>
+    </form>
+
+    <h3 class="section-title">Our Proud Donors</h3>
+    <ul class="donor-list" id="donorList"></ul>
+  </div>
+
+  <script>
+    const form = document.getElementById("donorForm");
+    const donorNameInput = document.getElementById("donorName");
+    const donorList = document.getElementById("donorList");
+
+    let donors = JSON.parse(localStorage.getItem("donors")) || [];
+
+    function renderDonors() {
+      donorList.innerHTML = "";
+      donors.forEach(name => {
+        const li = document.createElement("li");
+        li.textContent = name;
+        donorList.appendChild(li);
+      });
+    }
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = donorNameInput.value.trim();
+      if (name) {
+        donors.unshift(name); // latest on top
+        localStorage.setItem("donors", JSON.stringify(donors));
+        donorNameInput.value = "";
+        renderDonors();
+      }
+    });
+
+    // Load existing donor list on page load
+    renderDonors();
+  </script>
+
+</body>
+</html>
