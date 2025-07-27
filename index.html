@@ -1,75 +1,97 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="hi"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RakshakAI – Because Every Victim Deserves a Protector</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background-color: #1d1f27;
+  color: #ffffff;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00e0ff;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #ff4081;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 10px 0 0;
+  background-color: #00e0ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+footer {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
   </style>
-</head><body class="bg-gray-50 text-gray-800">
-  <!-- Navbar -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center px-4 py-3">
-      <h1 class="text-xl font-bold text-blue-700">🔰 RakshakAI</h1>
-      <nav class="space-x-4 text-sm">
-        <a href="#about" class="text-gray-600 hover:text-blue-700">About</a>
-        <a href="#features" class="text-gray-600 hover:text-blue-700">Features</a>
-        <a href="#donate" class="text-gray-600 hover:text-blue-700">Donate</a>
-        <a href="#supporters" class="text-gray-600 hover:text-blue-700">Supporters</a>
-        <a href="#contact" class="text-gray-600 hover:text-blue-700">Contact</a>
-      </nav>
+</head><body>
+  <header>
+    <h1>RakshakAI</h1>
+    <p>क्योंकि हर पीड़ित को चाहिए एक रक्षक<br>Because Every Victim Deserves a Protector</p>
+  </header>  <section>
+    <h2>हमारा उद्देश्य / Our Vision</h2>
+    <p>RakshakAI एक ऐसा टेक्नोलॉजी सिस्टम है जो अत्याचार और उत्पीड़न का शिकार हुए लोगों को तुरंत सुरक्षा, कानूनी मदद और भावनात्मक सहारा देता है।<br>
+    We combine technology with empathy to protect the most vulnerable in real-time.</p>
+  </section>  <section>
+    <h2>RakshakAI क्यों जरूरी है?</h2>
+    <p>भारत में हर 3 में से 1 महिला घरेलू हिंसा का शिकार होती है। हर साल हज़ारों केस रिपोर्ट नहीं होते — क्योंकि लोगों को मदद का रास्ता नहीं पता होता।<br>
+    हम इसे बदलना चाहते हैं – तकनीक के दम पर।</p>
+  </section>  <section>
+    <h2>आप क्या कर सकते हैं?</h2>
+    <div class="button-group">
+      <a href="donor.html" class="button">Donate Now</a>
+      <a href="features.html" class="button">Know the Features</a>
+      <a href="supporters.html" class="button">Join as Supporter</a>
     </div>
-  </header>  <!-- Hero Section -->  <section class="bg-blue-100 py-16 px-6 text-center">
-    <h2 class="text-3xl md:text-5xl font-bold text-blue-800 mb-4">Because Every Victim Deserves a Protector</h2>
-    <p class="text-gray-700 max-w-2xl mx-auto">RakshakAI is India’s first AI-powered system built to protect victims of abuse, injustice, and violence in real-time. Emotion + Law + AI — in one powerful app.</p>
-  </section>  <!-- About -->  <section id="about" class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-2xl font-bold text-blue-700 mb-4">🔍 About RakshakAI</h3>
-      <p class="text-gray-700">RakshakAI is a mission-driven platform that offers real-time support, legal guidance, and emergency alerts for victims of abuse. With emotional support modules and AI-based recognition, it is your digital rakshak when the world turns away.</p>
-    </div>
-  </section>  <!-- Features -->  <section id="features" class="bg-white py-16 px-4">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-bold text-blue-700 mb-6">🛡️ Core Features</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-700">
-        <div class="p-4 border rounded-xl shadow-sm">
-          <h4 class="font-bold mb-2">📢 SOS Alert</h4>
-          <p>Real-time emergency alerts to trusted contacts or authorities.</p>
-        </div>
-        <div class="p-4 border rounded-xl shadow-sm">
-          <h4 class="font-bold mb-2">⚖️ Legal Aid Chatbot</h4>
-          <p>Instant legal help based on IPC laws and real case guidance.</p>
-        </div>
-        <div class="p-4 border rounded-xl shadow-sm">
-          <h4 class="font-bold mb-2">🧠 Emotional Support</h4>
-          <p>In-built mental health tools for stress and trauma recovery.</p>
-        </div>
-      </div>
-    </div>
-  </section>  <!-- Donation CTA -->  <section id="donate" class="bg-blue-50 py-16 px-4 text-center">
-    <h3 class="text-2xl font-bold text-blue-800 mb-4">❤️ Support the Mission</h3>
-    <p class="text-gray-700 max-w-xl mx-auto mb-6">We’re building this with zero corporate funding. Every ₹10 you donate helps us reach someone who needs urgent help. Stand with RakshakAI today.</p>
-    <img src="/QR-code-phonepe.png" alt="QR Code" class="mx-auto w-48 mb-4" />
-    <p class="text-lg font-semibold text-gray-800">UPI: 9265371759@ybl</p>
-  </section>  <!-- Donor Names -->  <section id="supporters" class="bg-white py-12 px-4">
-    <h3 class="text-2xl font-bold text-blue-700 text-center mb-4">💖 Our Supporters</h3>
-    <p class="text-center text-gray-600 mb-6">Thank you to the kind souls who believed in RakshakAI.</p>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-800 font-semibold">
-      <div>🔹 Ramesh S.</div>
-      <div>🔹 Priya R.</div>
-      <div>🔹 Anjali T.</div>
-      <div>🔹 Anonymous 🌸</div>
-      <div>🔹 Manvender Singh</div>
-      <div>🔹 Rajat B.</div>
-      <div>🔹 Shruti D.</div>
-      <div>🔹 YOU? 😊</div>
-    </div>
-  </section>  <!-- Contact -->  <section id="contact" class="bg-blue-100 py-12 px-4 text-center">
-    <h3 class="text-2xl font-bold text-blue-800 mb-2">📞 Contact</h3>
-    <p class="text-gray-700">Email: <a href="mailto:rakshakaisos@gmail.com" class="text-blue-700 font-semibold">rakshakaisos@gmail.com</a></p>
-    <p class="text-gray-700">Phone / WhatsApp: <span class="font-semibold">8279521992</span></p>
-  </section>  <!-- Footer -->  <footer class="bg-gray-100 py-4 text-center text-sm text-gray-500">
-    © 2025 RakshakAI. Built with ❤️ for every survivor.
+  </section>  <section>
+    <h2>संस्थापक की बात</h2>
+    <p>मैं Manvender Singh, RakshakAI का संस्थापक हूं।<br>
+    ये सिर्फ एक ऐप नहीं, एक मिशन है — पीड़ितों की आवाज़ बनने का।<br>
+    अगर आप बदलाव चाहते हैं, तो हमारे साथ जुड़िए।</p>
+  </section>  <footer>
+    <p>Contact: rakshakaisos@gmail.com | WhatsApp: 8279521992<br>
+    UPI: 9265371759@ybl</p>
   </footer>
 </body></html>
