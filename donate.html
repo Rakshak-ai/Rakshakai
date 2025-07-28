@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donate – RakshakAI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .fade-in-up {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.6s ease-out forwards;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
-</head>
-<body class="bg-white text-gray-800">
-  <header class="bg-gray-900 text-white p-4 shadow-md">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">RakshakAI</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="donate.html" class="font-semibold underline">Donate</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Donate – RakshakAI</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="icon" href="/images/logo.png" type="image/png"/>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/faq.html">FAQs</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/donate.html" class="active">Donate</a></li>
+        </ul>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="max-w-3xl mx-auto p-6">
-    <h2 class="text-3xl font-bold text-center mb-6 fade-in-up">Support RakshakAI</h2>
+    <!-- Donate Banner -->
+    <section class="banner">
+      <h1>Support RakshakAI</h1>
+      <p>आपका छोटा सा सहयोग किसी की ज़िन्दगी बचा सकता है।</p>
+      <p>बनिए किसी के रक्षक।</p>
+    </section>
 
-    <p class="text-lg text-center fade-in-up">
-      Your donation can help us protect lives, deliver justice, and provide emergency support for abuse victims.
-    </p>
+    <!-- QR Code Section -->
+    <section class="qr-donate">
+      <h2>Scan to Donate</h2>
+      <img src="/images/phonepe-qr.jpg" alt="PhonePe QR" class="qr-img"/>
+      <p>PhonePe / GPay / Paytm – 9265371759@ybl</p>
+    </section>
 
-    <div class="mt-10 fade-in-up">
-      <h3 class="text-xl font-semibold mb-2">🔹 UPI / QR Code</h3>
-      <img src="public/images/phonepe-qr.jpg" alt="Donate QR Code" class="w-full max-w-xs mx-auto rounded-xl shadow-lg">
-      <p class="text-sm mt-2 text-center text-gray-600">UPI ID: <strong>9265371759@ybl</strong></p>
-    </div>
-
-    <div class="mt-10 fade-in-up">
-      <h3 class="text-xl font-semibold mb-2">🔹 Why Donate?</h3>
-      <ul class="list-disc pl-5 space-y-1 text-gray-700">
-        <li>We provide real-time protection to abuse victims</li>
-        <li>Empower legal + mental support with AI</li>
-        <li>Funds go towards development, outreach, and emergency support</li>
+    <!-- Live Donors Section -->
+    <section class="live-supporters">
+      <h2>Live Supporters ❤️</h2>
+      <ul id="supporters-list">
+        <li>Ram – ₹500</li>
+        <li>Sita – ₹200</li>
+        <li>Anonymous – ₹1000</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="mt-10 text-center fade-in-up">
-      <p class="text-lg font-semibold">🙏 Thank you for supporting RakshakAI.</p>
-    </div>
-  </main>
+    <!-- Animated Donate CTA -->
+    <section class="cta-donate">
+      <a href="upi://pay?pa=9265371759@ybl&pn=RakshakAI&cu=INR" class="donate-btn pulse">Donate Now</a>
+    </section>
 
-  <footer class="bg-gray-100 mt-16 p-4 text-center text-sm text-gray-500">
-    &copy; 2025 RakshakAI. All rights reserved.
-  </footer>
-</body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918279521992" class="whatsapp-float" target="_blank">
+      <img src="/images/whatsapp-icon.png" alt="WhatsApp"/>
+    </a>
+  </body>
 </html>
