@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact Us - RakshakAI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-900 text-white font-inter">
-    <!-- Navbar Start -->
-    <nav class="bg-gray-950 text-white py-4 shadow-md">
-      <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-bold text-yellow-400">RakshakAI</a>
-        <div class="space-x-6 hidden md:block">
-          <a href="index.html" class="hover:text-yellow-400">Home</a>
-          <a href="features.html" class="hover:text-yellow-400">Features</a>
-          <a href="vision.html" class="hover:text-yellow-400">Vision</a>
-          <a href="donate.html" class="hover:text-yellow-400">Donate</a>
-          <a href="contact.html" class="text-yellow-400 font-semibold">Contact</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Features - RakshakAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white font-poppins">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-gray-900 shadow-md">
+    <a href="index.html" class="text-2xl font-bold text-white">RakshakAI</a>
+    <ul class="flex space-x-6 text-white">
+      <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+      <li><a href="feature.html" class="text-blue-400 font-semibold">Features</a></li>
+      <li><a href="donate.html" class="hover:text-blue-400">Donate</a></li>
+      <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Feature Section -->
+  <section class="py-16 px-4 text-center">
+    <h2 class="text-4xl font-bold mb-10">Powerful Features of RakshakAI</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold mb-2">🛡️ Real-Time Abuse Detection</h3>
+        <p class="text-gray-300">AI that detects voice and pattern signals of distress and alerts emergency contacts.</p>
       </div>
-    </nav>
-    <!-- Navbar End -->
 
-    <!-- Founder Section Start -->
-    <section class="bg-gray-900 text-white py-10 px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Meet Our Founder</h2>
-
-      <!-- Founder Image Placeholder -->
-      <div class="flex justify-center">
-        <img src="images/founder.jpg" alt="Founder Photo" class="w-40 h-40 rounded-full border-4 border-white shadow-lg object-cover">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold mb-2">📞 1-Tap Emergency Alert</h3>
+        <p class="text-gray-300">Send instant alerts to your trusted contacts, nearby NGOs, and local authorities.</p>
       </div>
 
-      <!-- Founder Details -->
-      <p class="mt-6 max-w-xl mx-auto text-lg text-gray-300">
-        Manvender Singh, the visionary behind RakshakAI, started this journey to protect abuse victims through tech. His mission is to build a safer, more just world for everyone.
-      </p>
-    </section>
-    <!-- Founder Section End -->
-
-    <!-- Contact Section -->
-    <section class="py-12 px-4">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-6 text-yellow-400">Contact Us</h2>
-        <p class="text-gray-300 mb-10">Feel free to reach out with questions, suggestions, or support.</p>
-
-        <form action="#" method="POST" class="space-y-6">
-          <div>
-            <input type="text" placeholder="Your Name" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-400" required />
-          </div>
-          <div>
-            <input type="email" placeholder="Your Email" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-400" required />
-          </div>
-          <div>
-            <textarea placeholder="Your Message" rows="5" class="w-full bg-gray-800 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-400" required></textarea>
-          </div>
-          <button type="submit" class="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-300 transition duration-300">Send Message</button>
-        </form>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold mb-2">⚖️ Legal Support Bot</h3>
+        <p class="text-gray-300">In-app bot for basic legal rights, FIR guidance, protection laws, and legal aid connect.</p>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-950 py-6 text-center text-sm text-gray-400">
-      © 2025 RakshakAI. All rights reserved.
-    </footer>
-  </body>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold mb-2">💬 Anonymous Chat Room</h3>
+        <p class="text-gray-300">Safe, anonymous platform for victims to connect, vent, and get help from support teams.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    &copy; 2025 RakshakAI. All rights reserved.
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918279521992" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg z-50" target="_blank">
+    <img src="images/whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
+  </a>
+
+</body>
 </html>
