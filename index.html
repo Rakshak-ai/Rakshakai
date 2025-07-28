@@ -1,193 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RakshakAI – Because Every Victim Deserves a Protector</title>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RakshakAI – Because Every Victim Deserves a Protector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!-- Main Styles -->
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Jost', sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+  }
+  section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  .hero {
+    background: linear-gradient(to right, #111, #1d1d1d);
+    padding: 100px 20px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    color: gold;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  .image-banner {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,215,0,0.3);
+  }
+  h2 {
+    color: gold;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  .highlight {
+    color: gold;
+    font-weight: bold;
+  }
+  .donors, .founder {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+  .donors ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  .donors li {
+    margin: 10px 0;
+  }
+  .footer {
+    background-color: #000;
+    padding: 40px 20px;
+    text-align: center;
+    color: #999;
+    font-size: 0.95rem;
+  }
+  .footer a {
+    color: gold;
+    text-decoration: none;
+  }
+  @media(max-width: 600px){
+    .hero h1 { font-size: 2rem; }
+    .hero p, p, li { font-size: 1rem; }
+  }
+</style>
 
-  <!-- Main Styles -->
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Jost', sans-serif;
-      background-color: #111;
-      color: #f5f5f5;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-    .hero {
-      background: linear-gradient(to right, #111, #1d1d1d);
-      padding: 100px 20px;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      color: gold;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #ddd;
-    }
-    .image-banner {
-      width: 100%;
-      max-width: 800px;
-      margin: 40px auto;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255,215,0,0.3);
-    }
-    h2 {
-      color: gold;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-    .highlight {
-      color: gold;
-      font-weight: bold;
-    }
-    .donors, .founder {
-      background-color: #1a1a1a;
-      border-radius: 15px;
-      padding: 40px 20px;
-      margin-top: 40px;
-    }
-    .donors ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1rem;
-    }
-    .donors li {
-      margin: 10px 0;
-    }
-    .footer {
-      background-color: #000;
-      padding: 40px 20px;
-      text-align: center;
-      color: #999;
-      font-size: 0.95rem;
-    }
-    .footer a {
-      color: gold;
-      text-decoration: none;
-    }
-    @media(max-width: 600px){
-      .hero h1 { font-size: 2rem; }
-      .hero p, p, li { font-size: 1rem; }
-    }
-  </style>
+<!-- WhatsApp Button Styles -->
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
 
-  <!-- WhatsApp Button Styles -->
-  <style>
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
 
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
+  .whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+</style>
 
-    .whatsapp-float img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-  </style>
-</head>
+  </head>
   <body>
+    <!-- Navbar Start -->
+    <header style="background-color: #0f172a; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+      <h2 style="color: white; margin: 0;">RakshakAI</h2>
+      <nav>
+        <a href="index.html" style="color: white; margin: 0 10px;">Home</a>
+        <a href="donate.html" style="color: white; margin: 0 10px;">Donate</a>
+        <a href="features.html" style="color: white; margin: 0 10px;">Features</a>
+        <a href="faq.html" style="color: white; margin: 0 10px;">FAQs</a>
+        <a href="contact.html" style="color: white; margin: 0 10px;">Contact</a>
+      </nav>
+    </header>
+    <!-- Navbar End --><!-- HERO SECTION -->
+<section class="hero" data-aos="fade-up">
+  <h1>RakshakAI</h1>
+  <p>Because Every Victim Deserves a <span class="highlight">Protector</span></p>
+  <p style="margin-top:15px;">हर पीड़ित को चाहिए एक रक्षक – यही है हमारा लक्ष्य।</p>
+</section>
 
-  <!-- Navbar Start -->
-<header style="background-color: #0f172a; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
-  <h2 style="color: white; margin: 0;">RakshakAI</h2>
-  <nav>
-    <a href="index.html" style="color: white; margin: 0 10px;">Home</a>
-    <a href="donate.html" style="color: white; margin: 0 10px;">Donate</a>
-    <a href="features.html" style="color: white; margin: 0 10px;">Features</a>
-    <a href="faq.html" style="color: white; margin: 0 10px;">FAQs</a>
-    <a href="contact.html" style="color: white; margin: 0 10px;">Contact</a>
-  </nav>
-</header>
-<!-- Navbar End -->
+<!-- IMAGE BANNER -->
+<section data-aos="zoom-in">
+  <img src="images/rakshak-banner.jpg" alt="RakshakAI Banner" class="image-banner">
+</section>
 
-  <!-- HERO SECTION -->
-  <section class="hero" data-aos="fade-up">
-    <h1>RakshakAI</h1>
-    <p>Because Every Victim Deserves a <span class="highlight">Protector</span></p>
-    <p style="margin-top:15px;">हर पीड़ित को चाहिए एक रक्षक – यही है हमारा लक्ष्य।</p>
-  </section>
+<!-- MISSION SECTION -->
+<section data-aos="fade-right">
+  <h2>Our Mission</h2>
+  <p>We are building <span class="highlight">India’s first AI-powered</span> protection system for victims of abuse, violence, and injustice.<br><br>
+  हमारा सपना है कि तकनीक की मदद से हर शोषित व्यक्ति को तुरंत सहायता, सुरक्षा और न्याय मिले – बिना किसी डर के।</p>
+</section>
 
-  <!-- IMAGE BANNER -->
-  <section data-aos="zoom-in">
-    <img src="https://raw.githubusercontent.com/Rakshak-ai/RakshakAI/main/assets/rakshak-banner.jpg" alt="RakshakAI Banner" class="image-banner">
-  </section>
+<!-- FEATURES SECTION -->
+<section data-aos="fade-left">
+  <h2>Key Features</h2>
+  <p>
+    🔹 Real-time Emergency Alerts<br>
+    🔹 Legal + Emotional AI Chat Support<br>
+    🔹 Victim Data Privacy First<br>
+    🔹 Trusted by NGOs, Lawyers, and Survivors<br><br>
+    🔸 अब चुप रहना नहीं पड़ेगा – अब है RakshakAI आपके साथ।
+  </p>
+</section>
 
-  <!-- MISSION SECTION -->
-  <section data-aos="fade-right">
-    <h2>Our Mission</h2>
-    <p>We are building <span class="highlight">India’s first AI-powered</span> protection system for victims of abuse, violence, and injustice.<br><br>
-    हमारा सपना है कि तकनीक की मदद से हर शोषित व्यक्ति को तुरंत सहायता, सुरक्षा और न्याय मिले – बिना किसी डर के।</p>
-  </section>
+<!-- DONORS SECTION -->
+<section class="donors" data-aos="fade-up">
+  <h2>💛 Thank You, Supporters</h2>
+  <ul>
+    <li>Dr. Rohit Mishra</li>
+    <li>Adv. Neha Sharma</li>
+    <li>Rahul Verma</li>
+    <li>Savita Devi</li>
+    <li>Manoj Tiwari</li>
+  </ul>
+</section>
 
-  <!-- FEATURES SECTION -->
-  <section data-aos="fade-left">
-    <h2>Key Features</h2>
-    <p>
-      🔹 Real-time Emergency Alerts<br>
-      🔹 Legal + Emotional AI Chat Support<br>
-      🔹 Victim Data Privacy First<br>
-      🔹 Trusted by NGOs, Lawyers, and Survivors<br><br>
-      🔸 अब चुप रहना नहीं पड़ेगा – अब है RakshakAI आपके साथ।
-    </p>
-  </section>
+<!-- FOUNDER SECTION -->
+<section class="founder" data-aos="fade-up">
+  <h2>👤 Founder</h2>
+  <p><span class="highlight">Manvender Singh</span><br>Social Innovator, Visionary Behind RakshakAI</p>
+  <p style="margin-top:10px;">Contact: <a href="mailto:rakshakaisos@gmail.com">rakshakaisos@gmail.com</a><br>📞 WhatsApp: 8279521992</p>
+  <img src="images/founder.jpg" alt="Founder - Manvender Singh" style="margin-top:20px; border-radius: 50%; width: 130px; height: 130px; box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);">
+</section>
 
-  <!-- DONORS SECTION -->
-  <section class="donors" data-aos="fade-up">
-    <h2>💛 Thank You, Supporters</h2>
-    <ul>
-      <li>Dr. Rohit Mishra</li>
-      <li>Adv. Neha Sharma</li>
-      <li>Rahul Verma</li>
-      <li>Savita Devi</li>
-      <li>Manoj Tiwari</li>
-    </ul>
-  </section>
+<!-- FOOTER -->
+<footer class="footer">
+  © 2025 RakshakAI. All Rights Reserved. | Built with 💙 by Manvender Singh & Team
+</footer>
 
-  <!-- FOUNDER SECTION -->
-  <section class="founder" data-aos="fade-up">
-    <h2>👤 Founder</h2>
-    <p><span class="highlight">Manvender Singh</span><br>Social Innovator, Visionary Behind RakshakAI</p>
-    <p style="margin-top:10px;">Contact: <a href="mailto:rakshakaisos@gmail.com">rakshakaisos@gmail.com</a><br>📞 WhatsApp: 8279521992</p>
-  </section>
+<!-- ANIMATION LIBRARIES -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    © 2025 RakshakAI. All Rights Reserved./Built with 💙 by Manvender Singh & Team.l
-  </footer>
-
-  <!-- ANIMATION LIBRARIES -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000 });</script>
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/918279521992" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Chat">
 </a>
+
   </body>
 </html>
