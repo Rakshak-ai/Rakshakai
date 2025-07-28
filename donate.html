@@ -1,58 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Donate – RakshakAI</title>
-    <link href="style.css" rel="stylesheet"/>
-    <link rel="icon" href="/images/logo.png" type="image/png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate - RakshakAI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .fade-in-up {
+        animation: fadeInUp 1s ease-out;
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <script>
+      function donateNow() {
+        const amount = document.getElementById("amount").value;
+        if (!amount || isNaN(amount) || amount <= 0) {
+          alert("Please enter a valid donation amount.");
+          return;
+        }
+        const upiLink = `upi://pay?pa=9265371759@ybl&pn=RakshakAI&am=${amount}&cu=INR`;
+        window.location.href = upiLink;
+      }
+    </script>
   </head>
-  <body>
-    <!-- Navbar -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/features.html">Features</a></li>
-          <li><a href="/faq.html">FAQs</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/donate.html" class="active">Donate</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-red-600 text-white p-4">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">RakshakAI</h1>
+        <nav class="space-x-4">
+          <a href="index.html" class="hover:underline">Home</a>
+          <a href="features.html" class="hover:underline">Features</a>
+          <a href="donate.html" class="underline font-bold">Donate</a>
+          <a href="faq.html" class="hover:underline">FAQs</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header><!-- Donate Section -->
+<main class="px-4 py-12 max-w-4xl mx-auto text-center">
+  <h2 class="text-3xl font-bold mb-4 fade-in-up">Support RakshakAI</h2>
+  <p class="text-lg mb-6 text-gray-700 fade-in-up">
+    Every rupee helps us protect victims and reach more lives.
+  </p>
 
-    <!-- Donate Banner -->
-    <section class="banner">
-      <h1>Support RakshakAI</h1>
-      <p>आपका छोटा सा सहयोग किसी की ज़िन्दगी बचा सकता है।</p>
-      <p>बनिए किसी के रक्षक।</p>
-    </section>
+  <!-- UPI Donate Box -->
+  <div class="max-w-md mx-auto bg-gray-100 p-6 rounded-lg shadow-md fade-in-up">
+    <label for="amount" class="block text-gray-700 mb-2 font-medium"
+      >Enter Amount (₹):</label
+    >
+    <input
+      type="number"
+      id="amount"
+      placeholder="e.g., 100"
+      class="w-full p-3 rounded-md border border-gray-300 mb-4"
+    />
+    <button
+      onclick="donateNow()"
+      class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md w-full"
+    >
+      Donate Now
+    </button>
+    <p class="text-sm text-gray-500 mt-3">
+      Your payment will be securely processed via your UPI app.
+    </p>
+  </div>
 
-    <!-- QR Code Section -->
-    <section class="qr-donate">
-      <h2>Scan to Donate</h2>
-      <img src="/images/phonepe-qr.jpg" alt="PhonePe QR" class="qr-img"/>
-      <p>PhonePe / GPay / Paytm – 9265371759@ybl</p>
-    </section>
+  <!-- QR Section -->
+  <div class="mt-10 fade-in-up">
+    <h3 class="text-xl font-semibold mb-2">Or scan to donate:</h3>
+    <img
+      src="assets/qr.png"
+      alt="Donate QR Code"
+      class="w-64 mx-auto rounded-md shadow-lg"
+    />
+    <p class="text-gray-600 mt-2">UPI ID: <strong>9265371759@ybl</strong></p>
+  </div>
 
-    <!-- Live Donors Section -->
-    <section class="live-supporters">
-      <h2>Live Supporters ❤️</h2>
-      <ul id="supporters-list">
-        <li>Ram – ₹500</li>
-        <li>Sita – ₹200</li>
-        <li>Anonymous – ₹1000</li>
-      </ul>
-    </section>
+  <!-- Hindi Emotional Line -->
+  <div class="mt-10 fade-in-up">
+    <p class="text-lg font-medium text-red-600">
+      ❤️ आपका छोटा सा सहयोग किसी की ज़िंदगी बचा सकता है। <br />
+      <strong>बनें किसी के रक्षक।🙏</strong>
+    </p>
+  </div>
 
-    <!-- Animated Donate CTA -->
-    <section class="cta-donate">
-      <a href="upi://pay?pa=9265371759@ybl&pn=RakshakAI&cu=INR" class="donate-btn pulse">Donate Now</a>
-    </section>
+  <!-- Live Supporters List -->
+  <div class="mt-12 max-w-xl mx-auto fade-in-up">
+    <h3 class="text-xl font-semibold mb-3">🌟 Recent Supporters</h3>
+    <ul class="text-left text-gray-700 list-disc list-inside">
+      <li>Ravi Kumar – ₹500</li>
+      <li>Sneha Sharma – ₹250</li>
+      <li>Anonymous – ₹1000</li>
+    </ul>
+  </div>
+</main>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918279521992" class="whatsapp-float" target="_blank">
-      <img src="/images/whatsapp-icon.png" alt="WhatsApp"/>
-    </a>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  <p class="text-sm">© 2025 RakshakAI. All rights reserved.</p>
+  <a
+    href="https://wa.me/918279521992"
+    class="text-blue-300 underline text-sm block mt-1"
+    >WhatsApp Chat</a
+  >
+</footer>
+
   </body>
 </html>
