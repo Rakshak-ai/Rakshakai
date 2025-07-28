@@ -2,61 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Features - RakshakAI</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RakshakAI - Features</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-950 text-white font-poppins">
+<body class="bg-black text-white font-sans">
 
-  <!-- Navbar -->
-  <nav class="flex items-center justify-between p-4 bg-gray-900 shadow-md">
-    <a href="index.html" class="text-2xl font-bold text-white">RakshakAI</a>
-    <ul class="flex space-x-6 text-white">
-      <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
-      <li><a href="feature.html" class="text-blue-400 font-semibold">Features</a></li>
-      <li><a href="donate.html" class="hover:text-blue-400">Donate</a></li>
-      <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+  <!-- ✅ Header -->
+  <header class="bg-black text-white p-4 flex justify-between items-center flex-wrap shadow-md sticky top-0 z-50">
+    <h2 class="text-2xl font-bold">RakshakAI</h2>
+    <nav class="flex gap-4 text-sm mt-2 md:mt-0">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="features.html" class="underline text-yellow-400">Features</a>
+      <a href="#vision" class="hover:underline">Vision</a>
+      <a href="faq.html" class="hover:underline">FAQs</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Features Section -->
+  <section class="p-6 md:p-12 fade-in-up">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-yellow-400">🔐 Key Features of RakshakAI</h1>
+    <ul class="space-y-6 text-lg leading-relaxed">
+      <li>✅ AI-Based Abuse Detection (via Chat + Voice)</li>
+      <li>✅ Real-Time SOS Alert System with Location Sharing</li>
+      <li>✅ Anonymous Reporting with Evidence Upload</li>
+      <li>✅ Free Legal Guidance (AI + Verified Lawyers)</li>
+      <li>✅ Emergency Emotional Support Chat</li>
+      <li>✅ NGO & Police Helpline Auto-Connect</li>
+      <li>✅ Offline Mode (for no internet situations)</li>
+      <li>✅ Data Encryption + Full Anonymity</li>
     </ul>
-  </nav>
-
-  <!-- Feature Section -->
-  <section class="py-16 px-4 text-center">
-    <h2 class="text-4xl font-bold mb-10">Powerful Features of RakshakAI</h2>
-
-    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold mb-2">🛡️ Real-Time Abuse Detection</h3>
-        <p class="text-gray-300">AI that detects voice and pattern signals of distress and alerts emergency contacts.</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold mb-2">📞 1-Tap Emergency Alert</h3>
-        <p class="text-gray-300">Send instant alerts to your trusted contacts, nearby NGOs, and local authorities.</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold mb-2">⚖️ Legal Support Bot</h3>
-        <p class="text-gray-300">In-app bot for basic legal rights, FIR guidance, protection laws, and legal aid connect.</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold mb-2">💬 Anonymous Chat Room</h3>
-        <p class="text-gray-300">Safe, anonymous platform for victims to connect, vent, and get help from support teams.</p>
-      </div>
-    </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
-    &copy; 2025 RakshakAI. All rights reserved.
-  </footer>
+  <!-- ✅ Vision Section -->
+  <section id="vision" class="p-6 md:p-12 bg-gray-900 fade-in-up">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">🚀 Our Vision</h2>
+    <p class="text-lg leading-relaxed">
+      We dream of a safer India, where every victim — regardless of gender — gets fast, intelligent, and real-time protection.
+      RakshakAI is not just an app. It's a **movement** to empower the unheard voices and shield the vulnerable with technology.
+    </p>
+  </section>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/918279521992" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg z-50" target="_blank">
-    <img src="images/whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
-  </a>
+  <!-- ✅ Footer -->
+  <footer class="bg-black text-gray-400 p-4 mt-12 text-sm text-center border-t border-gray-700">
+    © 2025 RakshakAI. Built with ❤️ for Justice. Contact: rakshakaisos@gmail.com | WhatsApp: 8279521992
+  </footer>
 
 </body>
 </html>
