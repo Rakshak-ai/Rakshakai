@@ -6,6 +6,29 @@
     <title>Contact Us - RakshakAI</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- WhatsApp Button Style -->
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+      .whatsapp-float img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    </style>
   </head>
   <body class="bg-gray-900 text-white font-inter">
     <!-- Navbar Start -->
@@ -15,8 +38,8 @@
         <div class="space-x-6 hidden md:block">
           <a href="index.html" class="hover:text-yellow-400">Home</a>
           <a href="features.html" class="hover:text-yellow-400">Features</a>
-          <a href="vision.html" class="hover:text-yellow-400">Vision</a>
           <a href="donate.html" class="hover:text-yellow-400">Donate</a>
+          <a href="faq.html" class="hover:text-yellow-400">FAQs</a>
           <a href="contact.html" class="text-yellow-400 font-semibold">Contact</a>
         </div>
       </div>
@@ -64,5 +87,10 @@
     <footer class="bg-gray-950 py-6 text-center text-sm text-gray-400">
       © 2025 RakshakAI. All rights reserved.
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918279521992" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Chat">
+    </a>
   </body>
 </html>
